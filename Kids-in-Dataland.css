@@ -12,8 +12,7 @@ button:before {
 Button {
   background: #bbb;
   border-radius: 0.1em;
-  font-weight: bold;
-  font-size: 1.2rem; }
+  font-weight: bold;}
   Button:hover > span {
     color: white; }
   Button:focus, Button:hover, Button:active {

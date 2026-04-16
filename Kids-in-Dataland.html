@@ -77,7 +77,9 @@
   </div>
 
   <div class="grid box dicebox">
-    <button></button>
+    <button name="act_zroll" type="action" value="&{template:rolls}{{header=Initiative}}{{subheader=@{character_nickname}}}{{dice=[[@{Flight}+?{modifier|0}&{tracker}]]}}">
+      <span>Initiative</span>
+    </button>
 
     <div class="">
       <h2>
@@ -547,7 +549,7 @@
 <div class="grid kob-row">
   <div class="grid box powers">
     <h2>
-      <img class="header" alt="Powers" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Kids%20on%20Bikes%20Official/images/Label-Powers-1.png"/>
+      <img class="header" alt="Powers" src="https://github.com/dodgydisc/Kids-in-Dataland/blob/main/images/KiD_Title_Concept.png?raw=true"/>
     </h2>
     <textarea name="attr_powers" placeholder="Powers" title="@{powers}"></textarea>
   </div>
@@ -607,7 +609,6 @@ startRoll(template, results => finishRoll(results.rollId, {}))        }
       {{/dice}}
       <!--- Display a description. This is great for text included with a roll --->
       {{#desc}}
-      <h4>Custom Result = {{computed::roll1}}</h4>
       <div class="sheet-template-row">
         <span class="sheet-template-desc"> </span>
       </div>
