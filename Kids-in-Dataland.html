@@ -1,0 +1,617 @@
+<input name="attr_version" type="hidden" value="1.04" />
+<h1 class="logo">
+  <img
+    alt="Kids on Bike Character Sheet"
+    src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Kids%20on%20Bikes%20Official/images/KOBLogo.png"
+  />
+</h1>
+<div class="grid kob-row">
+  <div class="grid box biobox">
+
+    <img alt="Name" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Kids%20on%20Bikes%20Official/images/Label-Name.png"/>
+    <input name="attr_character_name" placeholder="Name" title="@{character_name}" type="text" value=""/>
+
+    <img alt="nickame" src=""/>
+    <input name="attr_character_nickname" placeholder="Nickname" title="@{character_nickname}" type="text" value=""/>
+
+    <img alt="Age" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Kids%20on%20Bikes%20Official/images/Label-Age.png"/>
+    <input name="attr_character_age" placeholder="Age" title="@{character_age}"type="text" value=""/>
+
+    <img alt="Type" src=""/>
+    <input name="attr_character_type" placeholder="Type" title="@{character_type}" type="text" value=""/>
+
+    <img alt="Fear" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Kids%20on%20Bikes%20Official/images/Label-Fear.png"/>
+    <input name="attr_character_fear" placeholder="Fear" title="@{character_fear}" type="text" value=""/>
+
+    <img alt="Motivation" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Kids%20on%20Bikes%20Official/images/Label-Motivation.png"/>
+    <input name="attr_character_motivation" placeholder="Motivation" title="@{character_motivation}" type="text" value=""    />
+
+    <img alt="Hit Points" src=""/>
+    <div>
+      <img alt="Current HP" src=""/>
+      <input type="text" name="attr_hp" value="0"/>
+
+      <img alt="Max HP" src=""/>
+      <input type="text" name="attr_hp_max" value="0"/>
+    </div>
+
+    <img alt="Death Saves" src=""/>
+    <div>
+      <img alt="Successes" src=""/>
+      <input type="checkbox" name="attr_deathone" value="1"/>
+      <input type="checkbox" name="attr_deathtwo" value="1"/>
+      <input type="checkbox" name="attr_deaththree" value="1"/>
+
+      <img alt="Fails" src=""/>    
+      <input type="checkbox" name="attr_deathone" value="1"/>
+      <input type="checkbox" name="attr_deathtwo" value="1"/>
+      <input type="checkbox" name="attr_deaththree" value="1"/>
+    </div>		
+
+    <img alt="Description" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Kids%20on%20Bikes%20Official/images/Label-Descriptions.png"/>
+    <textarea name="attr_character_description" title="@{character_description}"></textarea>
+
+    <img alt="Adversity" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Kids%20on%20Bikes%20Official/images/Label-Adversity_updated.png"/>
+      <div class="sheet-biolabelcol">
+        <select name="attr_adversity" title="@{adversity}" value="0">
+          <optgroup label="Amount">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+          </optgroup>
+        </select>
+    </div>
+  </div>
+
+  <div class="grid box dicebox">
+    <button></button>
+
+    <div class="">
+      <h2>
+        <img alt="Roll Type" src=""/>
+      </h2>
+      <img alt="Normal" src=""/>
+      <input type="radio" name="attr_roll_setting" value="Flat" checked/>
+
+      <img alt="Advantage" src=""/>
+      <input type="radio" name="attr_roll_setting" value="Advantage"/>
+
+      <img alt="Disadvantage" src=""/>
+      <input type="radio" name="attr_roll_setting" value="Disadvantage"/>
+    </div>
+
+    <button name="act_zroll" type="action" value="Tamer">
+      <span>Tamer</span>
+    </button>
+    <select name="attr_tamer" title="@{tamer}">
+      <optgroup label="Dice">
+        Dice
+        <option value="d4!" selectedDie="selectedDie">Rookie</option>
+        <option value="d6!" selectedDie="selectedDie">Champion</option>
+        <option value="d8!" selectedDie="selectedDie">Ultimate</option>
+        <option value="d10!" selectedDie="selectedDie">Mega</option>
+      </optgroup>
+    </select>
+
+    <button name="act_zroll" type="action" value="fight">
+      <span>Fight</span>
+    </button>
+    <select name="attr_fight" title="@{fight}" value="d4">
+      <optgroup label="Dice">
+        Dice
+        <option value="d4!" selectedDie="selectedDie">d4</option>
+        <option value="d6!" selectedDie="selectedDie">d6</option>
+        <option value="d8!" selectedDie="selectedDie">d8</option>
+        <option value="d10!" selectedDie="selectedDie">d10</option>
+        <option value="d12!" selectedDie="selectedDie">d12</option>
+        <option value="d20!" selectedDie="selectedDie">d20</option>
+        <option value="d20!>19" selectedDie="selectedDie">HayMaker</option>
+        <option value="d20!>18" selectedDie="selectedDie">HayMaster</option>
+        <option value="d20!>17" selectedDie="selectedDie">Hay Now You're An All</option>
+        <option value="d20!>16" selectedDie="selectedDie">Nova FU</option>
+      </optgroup>
+    </select>
+
+    <button name="act_zroll" type="action" value="flight">
+      <span>Flight</span>
+    </button>
+    <select name="attr_flight" title="@{flight}" value="d4">
+      <optgroup label="Dice">
+        Dice
+        <option value="d4!" selectedDie="selectedDie">d4</option>
+        <option value="d6!" selectedDie="selectedDie">d6</option>
+        <option value="d8!" selectedDie="selectedDie">d8</option>
+        <option value="d10!" selectedDie="selectedDie">d10</option>
+        <option value="d12!" selectedDie="selectedDie">d12</option>
+        <option value="d20!" selectedDie="selectedDie">d20</option>
+        <option value="d20!>19" selectedDie="selectedDie">HayMaker</option>
+        <option value="d20!>18" selectedDie="selectedDie">HayMaster</option>
+        <option value="d20!>17" selectedDie="selectedDie">Hay Now You're An All</option>
+        <option value="d20!>16" selectedDie="selectedDie">Nova FU</option>
+      </optgroup>
+    </select>
+
+    <button name="act_zroll" type="action" value="brains">
+      <span>Brains</span>
+    </button>
+    <select name="attr_brains" title="@{brains}" value="d4">
+      <optgroup label="Dice">
+        Dice
+        <option value="d4!" selectedDie="selectedDie">d4</option>
+        <option value="d6!" selectedDie="selectedDie">d6</option>
+        <option value="d8!" selectedDie="selectedDie">d8</option>
+        <option value="d10!" selectedDie="selectedDie">d10</option>
+        <option value="d12!" selectedDie="selectedDie">d12</option>
+        <option value="d20!" selectedDie="selectedDie">d20</option>
+        <option value="d20!>19" selectedDie="selectedDie">HayMaker</option>
+        <option value="d20!>18" selectedDie="selectedDie">HayMaster</option>
+        <option value="d20!>17" selectedDie="selectedDie">Hay Now You're An All</option>
+        <option value="d20!>16" selectedDie="selectedDie">Nova FU</option>
+      </optgroup>
+    </select>
+
+    <button name="act_zroll" type="action" value="brawn">
+      <span>Brawn</span>
+    </button>
+    <select name="attr_brawn" title="@{brawn}" value="d4">
+      <optgroup label="Dice">
+        Dice
+        <option value="d4!" selectedDie="selectedDie">d4</option>
+        <option value="d6!" selectedDie="selectedDie">d6</option>
+        <option value="d8!" selectedDie="selectedDie">d8</option>
+        <option value="d10!" selectedDie="selectedDie">d10</option>
+        <option value="d12!" selectedDie="selectedDie">d12</option>
+        <option value="d20!" selectedDie="selectedDie">d20</option>
+        <option value="d20!>19" selectedDie="selectedDie">HayMaker</option>
+        <option value="d20!>18" selectedDie="selectedDie">HayMaster</option>
+        <option value="d20!>17" selectedDie="selectedDie">Hay Now You're An All</option>
+        <option value="d20!>16" selectedDie="selectedDie">Nova FU</option>
+      </optgroup>
+    </select>
+
+    <button name="act_zroll" type="action" value="charm">
+      <span>Charm</span>
+    </button>
+    <select name="attr_charm" title="@{charm}" value="d4">
+      <optgroup label="Dice">
+        Dice
+        <option value="d4!" selectedDie="selectedDie">d4</option>
+        <option value="d6!" selectedDie="selectedDie">d6</option>
+        <option value="d8!" selectedDie="selectedDie">d8</option>
+        <option value="d10!" selectedDie="selectedDie">d10</option>
+        <option value="d12!" selectedDie="selectedDie">d12</option>
+        <option value="d20!" selectedDie="selectedDie">d20</option>
+        <option value="d20!>19" selectedDie="selectedDie">HayMaker</option>
+        <option value="d20!>18" selectedDie="selectedDie">HayMaster</option>
+        <option value="d20!>17" selectedDie="selectedDie">Hay Now You're An All</option>
+        <option value="d20!>16" selectedDie="selectedDie">Nova FU</option>
+      </optgroup>
+    </select>
+
+    <button name="act_zroll" type="action" value="grit">
+      <span>Grit</span>
+    </button>
+    <select name="attr_grit" title="@{grit}" value="d4">
+      <optgroup label="Dice">
+        Dice
+        <option value="d4!" selectedDie="selectedDie">d4</option>
+        <option value="d6!" selectedDie="selectedDie">d6</option>
+        <option value="d8!" selectedDie="selectedDie">d8</option>
+        <option value="d10!" selectedDie="selectedDie">d10</option>
+        <option value="d12!" selectedDie="selectedDie">d12</option>
+        <option value="d20!" selectedDie="selectedDie">d20</option>
+        <option value="d20!>19" selectedDie="selectedDie">HayMaker</option>
+        <option value="d20!>18" selectedDie="selectedDie">HayMaster</option>
+        <option value="d20!>17" selectedDie="selectedDie">Hay Now You're An All</option>
+        <option value="d20!>16" selectedDie="selectedDie">Nova FU</option>
+      </optgroup>
+    </select>
+  </div>
+</div>
+
+<div class="grid kob-row">
+  <div class="grid box strenghtsbox">
+    <h2>
+      <img class="header" alt="Strengths" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Kids%20on%20Bikes%20Official/images/Label-Strengths-1.png"/>
+    </h2>
+
+    <label title="COOL UNDER PRESSURE">
+      <input name="attr_cool" title="@{cool}" type="checkbox" value="1"/>
+    </label>
+    <span>COOL UNDER PRESSURE</span>
+
+    <label title="EASY GOING">
+      <input name="attr_easy_going" title="@{easy_going}" type="checkbox" value="1"/>
+    </label>
+    <span>EASY GOING</span>
+
+    <label title="GROSS">
+      <input name="attr_gross" title="@{gross}" type="checkbox" value="1"/>
+    </label>
+    <span>GROSS</span>
+
+    <label title="HEROIC">
+      <input name="attr_heroic" title="@{heroic}" type="checkbox" value="1"/>
+    </label>
+    <span>HEROIC</span>
+
+    <label title="INTUITIVE">
+      <input name="attr_intuitive" title="@{intuitive}" type="checkbox" value="1"/>
+    </label>
+    <span>INTUITIVE</span>
+
+    <label title="LOYAL">
+      <input name="attr_loyal" title="@{loyal}" type="checkbox" value="1"/>
+    </label>
+    <span>LOYAL</span>
+
+    <label title="LUCKY">
+      <input name="attr_lucky" title="@{lucky}" type="checkbox" value="1"/>
+    </label>
+    <span>LUCKY</span>
+
+    <label title="PREPARED">
+      <input name="attr_prepared" title="@{prepared}" type="checkbox" value="1"/>
+    </label>
+    <span>PREPARED</span>
+
+    <label title="PROTECTIVE">
+      <input name="attr_protective" title="@{protective}" type="checkbox" value="1"/>
+    </label>
+    <span>PROTECTIVE</span>
+
+    <label title="QUICK HEALING">
+      <input name="attr_quick_healing" title="@{quick_healing}" type="checkbox" value="1"/>
+    </label>
+    <span>QUICK HEALING</span>
+
+    <label title="REBELLIOUS">
+      <input name="attr_rebellious" title="@{rebellious}" type="checkbox" value="1"/>
+    </label>
+    <span>REBELLIOUS</span>
+
+    <label title="TOUGH">
+      <input name="attr_tough" title="@{tough}" type="checkbox" value="1"/>
+    </label>
+    <span>TOUGH</span>
+
+    <label title="TREASURE HUNTER">
+      <input name="attr_treasure_hunter" title="@{treasure_hunter}" type="checkbox" value="1"/>
+    </label>
+    <span>TREASURE HUNTER</span>
+
+    <label title="UNASSUMING">
+      <input name="attr_unassuming" title="@{unassuming}" type="checkbox" value="1"/>
+    </label>
+    <span>UNASSUMING</span>
+
+    <label title="WEALTHY">
+      <input name="attr_wealthy" title="@{wealthy}" type="checkbox" value="1"/>
+    </label>
+    <span>WEALTHY</span>
+
+    <label title="DEPENDABLE">
+      <input name="attr_dependable" title="@{dependable}" type="checkbox" value="1"/>
+    </label>
+    <span>DEPENDABLE</span>
+
+    <label class="skilledat" title="SKILLED AT">
+      <input name="attr_skilled_at" title="@{skilled_at}" type="checkbox" value="1"/>
+    </label>
+    <span>SKILLED AT:</span>
+
+    <label class="skillatcheckbox" title="SKILLED AT DESCRIPTION">
+      <input name="attr_skill_description" title="@{skill_description}" type="text"/>
+    </label>
+  </div>
+
+  <div class="grid box flawsbox">
+    <h2>
+      <img class="header" alt="Flaws" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Kids%20on%20Bikes%20Official/images/Label-Flaws-1.png"/>
+    </h2>
+
+    <label title="ABSENT MINDED">
+      <input name="attr_absent_minded" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>ABSENT MINDED</span>
+
+    <label title="BLUNT">
+      <input name="attr_blunt" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>BLUNT</span>
+
+    <label title="BOASTFUL">
+      <input name="attr_boastful" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>BOASTFUL</span>
+
+    <label title="CLUMSY">
+      <input name="attr_clumsy" title="@{}" type="checkbox" value="1" />
+    </label>
+    <span>CLUMSY</span>
+
+    <label title="CONCEITED">
+      <input name="attr_conceited" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>CONCEITED</span>
+
+    <label title="COWARDLY">
+      <input name="attr_cowardly" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>COWARDLY</span>
+
+    <label title="DECEITFUL" >
+      <input name="attr_deceitful" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>DECEITFUL</span>
+
+    <label title="DEMANDING">
+      <input name="attr_demanding" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>DEMANDING</span>
+
+    <label title="DISLOYAL">
+      <input name="attr_disloyal" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>DISLOYAL</span>
+
+    <label title="DISOBEDIENT">
+      <input name="attr_disobedient" title="@{}" type="checkbox"value="1"/>
+    </label>
+    <span>DISOBEDIENT</span>
+
+    <label title="DOGMATIC">
+      <input name="attr_dogmatic" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>DOGMATIC</span>
+
+    <label title="ENVIOUS">
+      <input name="attr_envious" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>ENVIOUS</span>
+
+    <label title="FLIPPANT">
+      <input name="attr_flippant" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>FLIPPANT</span>
+
+    <label title="GLOOMY">
+      <input name="attr_gloomy" title="@{}" type="checkbox" value="1" />
+    </label>
+    <span>GLOOMY</span>
+
+    <label title="GREEDY">
+      <input name="attr_greedy" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>GREEDY</span>
+
+    <label title="HOT-TEMPERED">
+      <input name="attr_hot_tempered" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>HOT-TEMPERED</span>
+
+    <label title="IGNORANT">
+      <input name="attr_ignorant" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>IGNORANT</span>
+
+    <label title="INCONSIDERATE">
+      <input name="attr_inconsiderate" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>INCONSIDERATE</span>
+
+    <label title="INSECURE">
+      <input name="attr_insecure" title="@{}" type="checkbox" alue="1"/>
+    </label>
+    <span>INSECURE</span>
+
+    <label title="IRRATIONAL">
+      <input name="attr_irrational" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>IRRATIONAL</span>
+
+    <label title="NEUROTIC">
+      <input name="attr_neurotic" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>NEUROTIC</span>
+
+    <label title="OBNOXIOUS">
+      <input name="attr_obnoxious" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>OBNOXIOUS</span>
+
+    <label title="PARANOID">
+      <input name="attr_paranoid" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>PARANOID</span>
+
+    <label title="PATRONIZING">
+      <input name="attr_patronizing" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>PATRONIZING</span>
+
+    <label title="PERVERSE">
+      <input name="attr_perverse" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>PERVERSE</span>
+
+    <label title="PETTY">
+      <input name="attr_petty" title="@{}" type="checkbox" value="1" />
+    </label>
+    <span>PETTY</span>
+
+    <label title="PICKY">
+      <input name="attr_picky" title="@{}" type="checkbox" value="1" />
+    </label>
+    <span>PICKY</span>
+
+    <label title="PREJUDICE">
+      <input name="attr_prejudice" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>PREJUDICE</span>
+
+    <label title="PRIM">
+      <input name="attr_prim" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>PRIM</span>
+
+    <label title="RECKLESS">
+      <input name="attr_reckless" title="@{}"type="checkbox"value="1"/>
+    </label>
+    <span>RECKLESS</span>
+
+    <label title="RESENTFUL">
+      <input name="attr_resentful" title="@{}" type="checkbox"value="1"/>
+    </label>
+    <span>RESENTFUL</span>
+
+    <label title="RESTLESS">
+      <input name="attr_restless" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>RESTLESS</span>
+
+    <label" title="RUDE"
+      ><input name="attr_rude" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>RUDE</span>
+
+    <label title="SECRETIVE">
+      <input name="attr_secretive" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>SECRETIVE</span>
+
+    <label title="SELF-CENTERED">
+      <input name="attr_selfcentered" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>SELF-CENTERED</span>
+
+    <label title="SELF-PITYING">
+      <input name="attr_selfpitying" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>SELF-PITYING</span>
+
+    <label title="SLOVENLY">
+      <input name="attr_slovenly" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>SLOVENLY</span>
+
+    <label title="SUPERSTITIOUS">
+      <input name="attr_superstitous" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>SUPERSTITIOUS</span>
+
+    <label title="VAIN">
+      <input name="attr_vain" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>VAIN</span>
+
+    <label title="VINDICTIVE">
+      <input name="attr_vindictive" title="@{}" type="checkbox" value="1"/>
+    </label>
+    <span>VINDICTIVE</span>
+  </div>
+</div>
+
+<div class="grid kob-row">
+  <div class="grid box powers">
+    <h2>
+      <img class="header" alt="Tamer Powers"/>
+    </h2>
+
+    <textarea name="attr_tamer_powers" placeholder="Tamer Powers" title="@{tamer_powers}"></textarea>
+  </div>
+
+  <div class="grid box backpack">
+    <h2>
+      <img class="header" alt="Partner Strengths"/>
+    </h2>
+
+    <textarea name="attr_partner_strengths" placeholder="Partner Strengths" title="partner_strengths}"></textarea>
+
+  </div>
+</div>
+
+<div class="grid kob-row">
+  <div class="grid box powers">
+    <h2>
+      <img class="header" alt="Powers" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Kids%20on%20Bikes%20Official/images/Label-Powers-1.png"/>
+    </h2>
+    <textarea name="attr_powers" placeholder="Powers" title="@{powers}"></textarea>
+  </div>
+
+  <div class="grid box backpack">
+    <h2>
+      <img class="header" alt="Backpack" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Kids%20on%20Bikes%20Official/images/Label-Backpack-1.png"/>
+    </h2>
+    <textarea name="attr_backpack"placeholder="Backpack" title="@{backpack}"></textarea>
+  </div>
+</div>
+
+<div class="grid kob-row">
+  <div class="grid box boxnotes">
+    <h2>
+      <img class="header" alt="Notes" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Kids%20on%20Bikes%20Official/images/Label-Notes-1.png"/>
+    </h2>
+    <textarea name="attr_notes" placeholder="Notes" title="@{notes}" ></textarea>
+  </div>
+</div>
+
+<script type="text/worker">
+on('clicked:zroll', (info) => {
+    getAttrs(
+      ['roll_setting'],
+        ({roll_setting}) => {
+          const attr = info.htmlAttributes.value
+            const template = (() => {
+                switch (roll_setting) {
+                    default:
+                    case 'Flat':
+                        return `&{template:rolls} {{header=${attr}}}{{subheader=@{character_nickname}|@{roll_setting}}}{{dice=[[@{${attr}}+?{modifier|0}]]}}`
+                    case 'Advantage':
+                    case 'Disadvantage':
+                        return `&{template:rolls} {{header=${attr}}}{{subheader=@{character_nickname}|@{roll_setting}}}{{dice=[[@{${attr}}+?{modifier|0}]]|[[@{${attr}}+?{modifier|0}]]}}`
+                }
+            })();
+startRoll(template, results => finishRoll(results.rollId, {}))        }
+    )
+})
+</script>
+
+<div class="rolltemplates">
+  <rolltemplate class="sheet-rolltemplate-rolls">
+
+    <!--- Display a header on the template --->
+
+    <div class="sheet-template-header">{{#header}}{{header}}{{/header}}</div>
+
+    <div class="sheet-template-subheader">{{#subheader}}{{subheader}}{{/subheader}}</div>
+
+    <!--- Display the dice roll in the template --->
+
+    <div class="sheet-template-body">
+      {{#dice}}
+      <div class="sheet-template-row">{{dice}}</div>
+      {{/dice}}
+      <!--- Display a description. This is great for text included with a roll --->
+      {{#desc}}
+      <h4>Custom Result = {{computed::roll1}}</h4>
+      <div class="sheet-template-row">
+        <span class="sheet-template-desc"> </span>
+      </div>
+      {{/desc}}
+    </div>
+  </rolltemplate>
+</div>
