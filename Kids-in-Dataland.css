@@ -70,7 +70,8 @@ div.sheet-kob-row {
     height: 30px;
     width: 200px; }
   div.sheet-kob-row div.sheet-biobox {
-    grid-template-columns: 8em 1fr; }
+    grid-template-columns: 8em 1fr; 
+    align-items: center;}
     div.sheet-kob-row div.sheet-biobox input[type='checkbox'] {
       height: 15px;
       width: 15px; }
