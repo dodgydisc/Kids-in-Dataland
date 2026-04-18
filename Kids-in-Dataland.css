@@ -49,7 +49,7 @@ textarea {
   white-space: pre-line; }
 
 h1.sheet-logo {
-  padding-left: 30%; }
+  align-items: center; }
 
 div.sheet-box {
   border: thin solid #bbb;
@@ -62,6 +62,11 @@ div.sheet-box {
 div.sheet-grid {
   display: inline-grid;
   grid-row-gap: 0.5em; }
+
+div.sheet-tiny img {
+  width: 90px;
+  height: 20px;
+}
 
 div.sheet-kob-row {
   grid-template-columns: 1fr 1fr;

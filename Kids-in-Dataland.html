@@ -24,7 +24,9 @@
     <input name="attr_character_motivation" placeholder="Motivation" title="@{character_motivation}" type="text" value=""    />
 
     <img alt="Hit Points" src="https://github.com/dodgydisc/Kids-in-Dataland/blob/main/images/HitPoints_HQ_KiD.png?raw=true"/>
-    <div>
+
+
+    <div class="tiny">
       <img alt="Current HP" src="https://github.com/dodgydisc/Kids-in-Dataland/blob/main/images/CurrentHP_HQ_KiD.png?raw=true"/>
       <input type="text" name="attr_hp" value="0"/>
 
@@ -33,7 +35,8 @@
     </div>
 
     <img alt="Death Saves" src="https://github.com/dodgydisc/Kids-in-Dataland/blob/main/images/DeathSaves_HQ_KiD.png?raw=true"/>
-    <div>
+
+    <div class="tiny">
       <img alt="Successes" src="https://github.com/dodgydisc/Kids-in-Dataland/blob/main/images/Successes_HQ_KiD.png?raw=true"/>
       <input type="checkbox" name="attr_death_save_one" value="1"/>
       <input type="checkbox" name="attr_death_save_two" value="1"/>
@@ -82,14 +85,23 @@
       <h2>
         <img alt="Roll Type" src="https://github.com/dodgydisc/Kids-in-Dataland/blob/main/images/RollType_HQ_KiD.png?raw=true"/>
       </h2>
-      <img alt="Normal" src="https://github.com/dodgydisc/Kids-in-Dataland/blob/main/images/Normal_HQ_KiD.png?raw=true"/>
-      <input type="radio" name="attr_roll_setting" value="Flat" checked/>
 
-      <img alt="Advantage" src="https://github.com/dodgydisc/Kids-in-Dataland/blob/main/images/Advantage_HQ_KiD.png?raw=true"/>
-      <input type="radio" name="attr_roll_setting" value="Advantage"/>
+      <div class="tiny">
+        <div>
+          <img alt="Normal" src="https://github.com/dodgydisc/Kids-in-Dataland/blob/main/images/Normal_HQ_KiD.png?raw=true"/>
+          <input type="radio" name="attr_roll_setting" value="Flat" checked/>
+        </div>
+        
+        <div>
+          <img alt="Advantage" src="https://github.com/dodgydisc/Kids-in-Dataland/blob/main/images/Advantage_HQ_KiD.png?raw=true"/>
+          <input type="radio" name="attr_roll_setting" value="Advantage"/>
+        </div>
 
-      <img alt="Disadvantage" src="https://github.com/dodgydisc/Kids-in-Dataland/blob/main/images/Disadvantage_HQ_KiD.png?raw=true"/>
-      <input type="radio" name="attr_roll_setting" value="Disadvantage"/>
+        <div>
+          <img alt="Disadvantage" src="https://github.com/dodgydisc/Kids-in-Dataland/blob/main/images/Disadvantage_HQ_KiD.png?raw=true"/>
+          <input type="radio" name="attr_roll_setting" value="Disadvantage"/>
+        </div>
+      </div>
     </div>
 
     <button name="act_zroll" type="action" value="Tamer">
