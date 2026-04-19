@@ -63,10 +63,13 @@ div.sheet-grid {
   display: inline-grid;
   grid-row-gap: 0.5em; }
 
-div.sheet-tiny img {
-  width: 90px;
-  height: 20px;
-}
+div.sheet.tiny {
+  width: 100%;
+  grid-template-columns: 0.5fr, 0.5fr;}
+  div.sheet-tiny img {
+    width: 90px; }
+  div.sheet-tiny input[type="text"] {
+    width: 50%; }
 
 div.sheet-kob-row {
   grid-template-columns: 1fr 1fr;
