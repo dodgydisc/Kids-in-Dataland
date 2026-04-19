@@ -69,7 +69,8 @@ div.sheet.tiny {
   div.sheet-tiny img {
     width: 90px; }
   div.sheet-tiny input[type="text"] {
-    width: 50%; }
+    width: 50%; 
+    text-align: center;}
 
 div.sheet-kob-row {
   grid-template-columns: 1fr 1fr;
