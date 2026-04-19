@@ -28,10 +28,10 @@
 
     <div class="tiny">
       <img alt="Current HP" src="https://github.com/dodgydisc/Kids-in-Dataland/blob/main/images/CurrentHP_HQ_KiD.png?raw=true"/>
-      <input type="text" name="attr_hp" value="0"/>
+      <input type="text" name="attr_hp" placeholder="0"  title="@{character_hp}" value=""/>
 
       <img alt="Max HP" src="https://github.com/dodgydisc/Kids-in-Dataland/blob/main/images/MaxHP_HQ_KiD.png?raw=true"/>
-      <input type="text" name="attr_hp_max" value="0"/>
+      <input type="text" name="attr_hp_max" placeholder="0" title="@{character_hp_max}" value=""/>
     </div>
 
     <img alt="Death Saves" src="https://github.com/dodgydisc/Kids-in-Dataland/blob/main/images/DeathSaves_HQ_KiD.png?raw=true"/>
@@ -105,9 +105,13 @@
       <optgroup label="Dice">
         Dice
         <option value="d4!" selectedDie="selectedDie">Rookie</option>
+        <option value="d4!>3" selectedDie="selectedDie">Rookie Nova</option>
         <option value="d6!" selectedDie="selectedDie">Champion</option>
+        <option value="d6!>5" selectedDie="selectedDie">Champion Nova</option>
         <option value="d8!" selectedDie="selectedDie">Ultimate</option>
+        <option value="d8!>7" selectedDie="selectedDie">Ultimate Nova</option>
         <option value="d10!" selectedDie="selectedDie">Mega</option>
+        <option value="d10!>9" selectedDie="selectedDie">Mega Nova</option>
       </optgroup>
     </select>
 
